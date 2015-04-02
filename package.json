@@ -1,7 +1,7 @@
 {
   "name": "express-auth-route",
   "description": "Authentication route for an express server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Steve King <steve@mydev.co>",
   "contributors": [
     {
@@ -18,7 +18,7 @@
     "express": "^4.12.3",
     "passport": "^0.2.1",
     "passport-facebook": "^2.0.0",
-    "passport-google-oauth": "^0.2.0",
+    "passport-google-oauth": "^0.1.5",
     "passport-local": "^1.0.0"
   }
 }
