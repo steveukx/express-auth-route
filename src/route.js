@@ -59,8 +59,8 @@ module.exports = function (properties, User, Account) {
             },
             function(accessToken, refreshToken, profile, done) {
                 User.findOrCreate('google', profile.id, accessToken, {
-                    firstName: profile.given_name,
-                    lastName: profile.family_name
+                    firstName: profile.name.givenName,
+                    lastName: profile.name.familyName
                 }).then(function (user) {
                     done(null, user);
                 });
