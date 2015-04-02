@@ -9,7 +9,7 @@ and [locally](https://www.npmjs.com/package/passport-local) managed users.
 
 Install direct from GitHub
 
-    npm install git@github.com:steveukx/express-auth-route.git --save
+    npm install git+https://github.com/steveukx/express-auth-route --save
 
 Then add to an existing [express](https://www.npmjs.com/package/express) app as a route:
 
