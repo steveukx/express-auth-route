@@ -89,6 +89,12 @@ module.exports = function (properties, User, Account) {
         }
     ));
 
+    app.get('/logout',
+        function (req, res) {
+            req.session.logout();
+            res.redirect(properties['auth-logout-url'] || '/')
+        });
+
     app.post('/login',
         require('body-parser').urlencoded({extended: false}),
         passport.authenticate('local', { failureRedirect: '/login' }),
